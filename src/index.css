@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100 font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    @apply border-slate-700/50;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    @apply font-mono;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-electric-400 to-violet-400 bg-clip-text text-transparent;
+  }
+  .card-glow {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.15), 0 0 60px rgba(59, 130, 246, 0.08);
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+  }
+}
